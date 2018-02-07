@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Tabs</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+ 
+      <div class="container">
+        <div class="page-header">
+          <h1>Bootstrap Tabs</h1>
+          <p class="lead"> Alterne facilmente entre conteudos</p>
+        </div>
+
+         <!--Criação de Header-->
+
+        <!--Criação de Apas-->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="active" role="presentation"><a href="#info" ria-controls="home" role="tab" data-toggle="tab">Informações</a></li>
+          <li role="presentation"><a href="#avaliacao" role="tab" data-toggle="tab">Avaliacoes</a></li>
+          <li role="presentation"><a href="#compre" role="tab" data-toggle="tab">Compre mais</a></li>
+        </ul>
+
+
+         <!--Conteudo de Apas-->
+
+         <div class="tabs-content">
+            <!--Conteudo informacoes-->
+          <div class="tab-pane active" role="tabpanel" id="info">
+            <h3>Informações</h3>
+            <p>Lorme udemy portaç nota programação desenvolvedor,Informações</p>
+          </div>
+
+
+          <!--Conteudo Avaliaçoes-->
+          <div class="tab-pane" role="tabpanel" id="avaliacao">
+            <h3>Avaliaçoes</h3>
+            <p>Lorme udemy portaç nota programação desenvolvedor,Avaliaçoes</p>
+          </div>
+
+
+          <!--Conteudo Compre mais-->
+          <div class="tab-pane" role="tabpanel" id="compre">
+            <h3>Compre mais</h3>
+            <p>Lorme udemy portaç nota programação desenvolvedor ompre mais</p>
+          </div>
+           
+         </div>
+
+
+         <div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">.fdsfsf..</div>
+    <div role="tabpanel" class="tab-pane" id="profile">..ssss.</div>
+    <div role="tabpanel" class="tab-pane" id="messages">..dddd.</div>
+    <div role="tabpanel" class="tab-pane" id="settings">..dddffdffff.</div>
+  </div>
+
+</div>
+        
+
+    
+      
+      </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      
+      $('#myTabs a').click(function (e) {
+        e.preventDefault()
+       $(#info).tab('show')
+       $('#avaliacao').tab('show')
+       $('#compre').tab('show')
+
+          })
+
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
